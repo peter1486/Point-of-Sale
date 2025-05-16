@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="905ead018361a210fcd6c170deaad3a0" label="Product" max_length="40" name="x_68761_point_of_s_bar_product" type="collection">
+        <element label="Price" max_length="20" name="price" type="decimal"/>
+        <element label="stock" max_length="40" name="stock" type="integer"/>
+        <element display="true" label="Name" max_length="200" name="name" type="string"/>
+        <element label="Bar code" max_length="50" name="bar_code" type="string"/>
+        <element attributes="pdf_cell_type=image" label="Image" max_length="40" name="image" type="user_image"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element choice="1" label="Category" max_length="40" name="category" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Promociones" sequence="2" value="Promociones"/>
+                <element inactive_on_update="false" label="Comida" sequence="1" value="Comida"/>
+                <element inactive_on_update="false" label="Bebidas" sequence="0" value="Bebidas"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" dependent="category" dependent_on_field="category" label="Subcategory" max_length="40" name="subcategory" type="string" use_dependent_field="true">
+            <choice>
+                <element dependent_value="Bebidas" inactive_on_update="false" label="Extra" sequence="2" value="Extra"/>
+                <element dependent_value="Bebidas" inactive_on_update="false" label="Cócteles" sequence="0" value="Cócteles"/>
+                <element dependent_value="Bebidas" inactive_on_update="false" label="Bebidas sin alcohol" sequence="3" value="Bebidas sin alcohol"/>
+                <element dependent_value="Bebidas" inactive_on_update="false" label="Cervezas Artesanales" sequence="1" value="Cervezas Artesanales"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

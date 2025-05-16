@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="d53135c18361a210fcd6c170deaad347" label="Mesa" max_length="40" name="x_68761_point_of_s_bar_tables" type="collection">
+        <element label="Number" max_length="10" name="number" type="string"/>
+        <element choice="1" default="Libre" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Libre" sequence="0" value="Libre"/>
+                <element inactive_on_update="false" label="Ocupada" sequence="1" value="Ocupada"/>
+                <element inactive_on_update="false" label="Reservada" sequence="2" value="Reservada"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Current order" max_length="32" name="current_order" reference="x_68761_point_of_s_oders" type="reference"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <index name="index">
+            <element name="current_order"/>
+        </index>
+        <index name="index2">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

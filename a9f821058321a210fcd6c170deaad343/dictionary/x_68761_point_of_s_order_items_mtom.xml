@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="fb0679c58361a210fcd6c170deaad331" label="Order item" max_length="40" name="x_68761_point_of_s_order_items_mtom" type="collection">
+        <element label="Order" max_length="32" name="order" reference="x_68761_point_of_s_oders" type="reference"/>
+        <element label="Subtotal" max_length="15" name="subtotal" read_only="true" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true" label="Notas" max_length="200" name="notas" type="string"/>
+        <element label="Product" max_length="32" name="product" reference="x_68761_point_of_s_bar_product" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="Pendiente" label="Status" max_length="40" name="status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Pendiente" sequence="0" value="Pendiente"/>
+                <element inactive_on_update="false" label="Entregado" sequence="2" value="Entregado"/>
+                <element inactive_on_update="false" label="En Preparacion" sequence="1" value="En Preparacion"/>
+            </choice>
+        </element>
+        <element label="Quantity" mandatory="true" max_length="40" name="quantity" type="integer"/>
+        <index name="index">
+            <element name="order"/>
+        </index>
+        <index name="index2">
+            <element name="product"/>
+        </index>
+    </element>
+</database>

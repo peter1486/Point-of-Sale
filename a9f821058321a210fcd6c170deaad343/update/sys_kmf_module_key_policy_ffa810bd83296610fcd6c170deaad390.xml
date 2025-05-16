@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_kmf_module_key_policy">
+    <sys_kmf_module_key_policy action="INSERT_OR_UPDATE">
+        <crypto_module display_value="sn_employee.legal_name_for_employee_profile">5753959867323110fc90a2aeb8f922f9</crypto_module>
+        <key_type display_value="Symmetric Data Encryption Key">1c38f324c7003300af4d43c6f097636e</key_type>
+        <last_enforced>2025-05-16 22:41:22</last_enforced>
+        <result>reject</result>
+        <sys_class_name>sys_kmf_module_key_policy</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-16 22:41:22</sys_created_on>
+        <sys_id>ffa810bd83296610fcd6c170deaad390</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Point of sale" source="x_68761_point_of_s">a9f821058321a210fcd6c170deaad343</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Point of sale">a9f821058321a210fcd6c170deaad343</sys_scope>
+        <sys_update_name>sys_kmf_module_key_policy_ffa810bd83296610fcd6c170deaad390</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-16 22:41:22</sys_updated_on>
+    </sys_kmf_module_key_policy>
+</record_update>

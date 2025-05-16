@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="a303b9058361a210fcd6c170deaad3d7" label="Orden" max_length="40" name="x_68761_point_of_s_oders" type="collection">
+        <element label="Total" max_length="15" name="total" read_only="true" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Payment_method" max_length="40" name="payment_method" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Tarjeta" sequence="1" value="Tarjeta"/>
+                <element inactive_on_update="false" label="Efectivo" sequence="0" value="Efectivo"/>
+                <element inactive_on_update="false" label="Transferencia" sequence="2" value="Transferencia"/>
+            </choice>
+        </element>
+        <element label="Discount" max_length="15" name="discount" type="decimal"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="abierta" label="status Order" max_length="40" name="status_order" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Abierta" sequence="0" value="abierta"/>
+                <element inactive_on_update="false" label="Cerrada" sequence="1" value="cerrada"/>
+            </choice>
+        </element>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element label="table" max_length="32" name="table" reference="x_68761_point_of_s_bar_tables" type="reference"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+        <index name="index2">
+            <element name="table"/>
+        </index>
+    </element>
+</database>

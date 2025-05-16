@@ -7,23 +7,23 @@
         <hint/>
         <name/>
         <order/>
-        <roles>admin</roles>
+        <roles>admin,x_68761_point_of_s.Role de Mesero</roles>
         <sys_class_name>sys_app_application</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-05-14 20:38:46</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>98792d458321a210fcd6c170deaad346</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>Point of sale</sys_name>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Bar Tin</sys_name>
         <sys_overrides/>
         <sys_package display_value="Point of sale" source="x_68761_point_of_s">a9f821058321a210fcd6c170deaad343</sys_package>
         <sys_policy/>
         <sys_scope display_value="Point of sale">a9f821058321a210fcd6c170deaad343</sys_scope>
         <sys_update_name>sys_app_application_98792d458321a210fcd6c170deaad346</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-05-14 20:38:46</sys_updated_on>
-        <title>Point of sale</title>
+        <sys_updated_on>2025-05-16 04:58:08</sys_updated_on>
+        <title>Bar Tin</title>
         <view_name/>
     </sys_app_application>
 </record_update>
